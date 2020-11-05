@@ -1,0 +1,17 @@
+{
+  "collectionName": "components_repos_repos",
+  "info": {
+    "name": "repo",
+    "icon": "link",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "Name": {
+      "type": "string"
+    },
+    "URL": {
+      "type": "string"
+    }
+  }
+}

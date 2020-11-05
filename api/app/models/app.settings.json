@@ -1,0 +1,36 @@
+{
+  "kind": "collectionType",
+  "collectionName": "apps",
+  "info": {
+    "name": "App",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "Name": {
+      "type": "string",
+      "required": true
+    },
+    "Description": {
+      "type": "text",
+      "required": true
+    },
+    "Slug": {
+      "type": "string",
+      "required": false
+    },
+    "Views": {
+      "type": "integer",
+      "default": 0
+    },
+    "repo": {
+      "type": "component",
+      "repeatable": true,
+      "component": "repos.repo"
+    }
+  }
+}
